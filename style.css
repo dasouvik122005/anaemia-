@@ -1,0 +1,23 @@
+.container { font-family: sans-serif; max-width: 500px; margin: 50px auto; padding: 20px; border: 1px solid #ccc; border-radius: 8px; }
+.input-group { margin-bottom: 20px; }
+
+/* The Reference Scale Bar */
+.color-gradient-bar {
+    height: 30px;
+    width: 100%;
+    /* Replicating your MATLAB base colors: Red -> Yellow -> Green */
+    background: linear-gradient(to right, #FF0000 0%, #FFFF00 50%, #00B300 100%);
+    border: 1px solid #000;
+}
+
+.scale-labels { display: flex; justify-content: space-between; margin-top: 5px; font-size: 12px; }
+
+.result-box {
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+    border: 2px solid #000;
+    transition: background-color 0.5s ease;
+}
+
+#diagnosisText { text-align: center; font-weight: bold; font-size: 1.2em; }

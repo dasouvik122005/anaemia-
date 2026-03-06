@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hb Diagnostic Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Hb Diagnostic Report</h2>
+        
+        <div class="input-group">
+            <label for="hbValue">Enter Hemoglobin (g/dL):</label>
+            <input type="number" id="hbValue" step="0.1" placeholder="e.g. 14.2">
+            <button onclick="generateReport()">Check Result</button>
+        </div>
+
+        <hr>
+
+        <div id="reportSection" style="display:none;">
+            <h3>Reference Scale: Risk to Safe</h3>
+            <div class="color-gradient-bar"></div>
+            <div class="scale-labels">
+                <span>5 (Low)</span>
+                <span>10 (Mid)</span>
+                <span>15 (High)</span>
+            </div>
+
+            <div class="patient-result">
+                <h4>Patient Result</h4>
+                <div id="resultBox" class="result-box"></div>
+                <p id="diagnosisText"></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
